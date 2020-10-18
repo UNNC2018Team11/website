@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: Team 11
+subtitle: 'Eye Tracking for Simulation Assessment'
+description: 'Eye Tracking for Simulation Assessment'
 keywords:
-author: John Doe
+author: Team 11
 language: en
 timezone: ''
 
@@ -15,11 +15,12 @@ timezone: ''
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
 url: http://example.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: archives/:abbrlink.html
 permalink_defaults:
-pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+abbrlink:
+  alg: crc32 # 算法：crc16(default) and crc32
+  rep: hex # 进制：dec(default) and hex
+  auto_category: false
 
 # Directory
 source_dir: source
@@ -41,7 +42,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -51,20 +52,15 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
-prismjs:
-  enable: false
-  preprocess: true
-  line_number: true
-  tab_replace: ''
 
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
-index_generator:
-  path: ''
-  per_page: 10
-  order_by: -date
+# # Home page setting
+# # path: Root path for your blogs index page. (default = '')
+# # per_page: Posts displayed per page. (0 = disable pagination)
+# # order_by: Posts order. (Order by date descending by default)
+# index_generator:
+#   path: ''
+#   per_page: 10
+#   order_by: -date
 
 # Category & Tag
 default_category: uncategorized
@@ -82,7 +78,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+use_date_for_updated: true
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -98,9 +94,11 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: hipaper
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository: https://github.com/18757670961/18757670961.github.io
+  branch: main
