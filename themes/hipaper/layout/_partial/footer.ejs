@@ -19,9 +19,38 @@
   </div>
 </footer>
 
+<!-- async load function -->
+<script>
+  function async(u, c) {
+      let d = document,
+          t = "script",
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) {
+          o.addEventListener(
+              "load",
+              function (e) {
+                  c(null, e);
+              },
+              false
+          );
+      }
+      s.parentNode.insertBefore(o, s);
+  }
+</script>
+
+<!-- dark mode -->
+<script>
+  const html = document.getElementsByTagName("html")[0];
+  const toggleTheme = () => {
+      if (html.getAttribute("theme") == "light")
+          html.setAttribute("theme", "dark");
+      else html.setAttribute("theme", "light");
+  };
+</script>
 
 <!-- min height -->
-
 <script>
     var wrapdiv = document.getElementById("wrap");
     var contentdiv = document.getElementById("content");
