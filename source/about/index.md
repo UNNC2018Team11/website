@@ -20,7 +20,7 @@ abbrlink: 74350de7
 
 **|** **Sijin Wang**
 
-- *Email*: scymw1@nottingham.edu.cn
+- *Email*: scysw1@nottingham.edu.cn
 
 - *Experience*:
 
