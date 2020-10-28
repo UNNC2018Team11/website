@@ -8,6 +8,8 @@ Welcome to the official website of **Team11**, the best GRP development team eve
 
 Here, we would update our latest progress in the project **Eye Tracking for Simulation Assessment**, as well as some interesting findings along the road.
 
+**[Notice]** You can view our latest posts from the column on the right-hand side **--->**
+
 ------
 
 
@@ -18,7 +20,7 @@ Here, we would update our latest progress in the project **Eye Tracking for Simu
 
 **Project**: Eye Tracking for Simulation Assessment
 
-**Supervisor**: Dr. Chris Roadknight (chris.roadknight@nottingham.edu.cn)
+**Supervisor**: Dr. Chris Roadknight [chris.roadknight@nottingham.edu.cn]
 
 
 
@@ -88,7 +90,7 @@ Here, we would update our latest progress in the project **Eye Tracking for Simu
 
 **| Xiaoqing Wang**
 
-- *Email*: :scyxw6@nottingham.edu.cn
+- *Email*: scyxw6@nottingham.edu.cn
 
 - *Experience*:
 

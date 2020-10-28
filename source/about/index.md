@@ -10,7 +10,7 @@ abbrlink: 74350de7
 
 **Project**: Eye Tracking for Simulation Assessment
 
-**Supervisor**: Dr. Chris Roadknight (chris.roadknight@nottingham.edu.cn)
+**Supervisor**: Dr. Chris Roadknight [chris.roadknight@nottingham.edu.cn]
 
 ------
 
@@ -80,3 +80,18 @@ abbrlink: 74350de7
   - Statistical analysis based on R, relational database design (ER, SQL), basic data structure and algorithms, version control (git), unit testing (Junit)
   - Build tools (NPM, Webpack), framework (Bootstrap, Vue.is, Node.is), OS basics
 
+**| Xiaoqing Wang**
+
+- *Email*: scyxw6@nottingham.edu.cn
+
+- *Experience*:
+
+  - 2019-07 - 2020-08
+
+    Studied Python programming in Peking University, and created a game in Python with a piece of microbit
+
+  - 2020-07 - 2020-08
+
+    Focused on a summer research, “Play with PYNQ”. Use pynq and sea-7 boards to learn some knowledge of hardware
+
+- *IT Skills*: C, Java, PHP, CSS, HTML, JavaScript, Python, Matlab
