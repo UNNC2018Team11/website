@@ -17,18 +17,30 @@ The system should provide an assessment mechanism on how users interpret and int
 
 ## Functional
 
-- Users should be able to log in through username and password if they have an account
-- Users should be able to register if they don’t have an account, they will be instructed to set their username, password, and confirm the password
-- Users should be allowed to reset their password and security question (security question must be answered)
-- Users should be provided with a way to find back their password in case they forget it (use email address to verify)
-- When the User press ‘**Start Simulation**’ button, the system will then allow user to select simulation level. The information for current account will be shown at the right corner of the page
-- Users should be provided with a certain amount of topics to choose from. Further, under that topic, they should be provided with several simulations to watch [ There are currently **six** different levels to be chosen from, they are ‘**Ningbo**’, ‘**Comic**’, ‘**Animals**’, ‘**Traffic**’, ‘**Building**’ and ‘**Sports**’ ]
-- User can stop the simulation any time they want by clicking the button under the simulation
-- When the simulation stops, the data will be shown to the customer, which shows the time the user looks at different part in the simulation
-- The user can try the simulation again if he presses ‘**Try Again**’
-- The algorithm provided by the programmer will score the simulation automatically
-- When a user presses ‘Next’, he will be asked to rate the simulation from 1 to 10
-- User can check their record by clicking ‘My account’ – ‘My record’
+| **Requirements for the system as a whole**                                                                              | **Importance**  |
+| :---------------------------------------------------------------------------------------------------------------------- | :-------------- |
+| Building a tool that users can use to score the simulation experience.                                                  | Important       |
+| The system should enable inspecting how users interpret and interact with simulations by following their eye movements. | High Importance |
+| The system should be able to quantitatively analyze the x and y value of each gazing point.                             | Important       |
+
+1. Users should be able to log in to the system with a correct account.
+2. Users should be able to register a new account with their names, passwords and e-mails.
+3. Each username should be unique which is used to identify users.
+4. The information of the current account shall be shown at the left corner of the page.
+5. Users are able to log out by pressing the “Log out” button on the hamburger menu.
+6. Users can check out the guidance and detailed information about this application by clicking “Guidance” and “About” buttons on the hamburger menu.
+7. When the user press the “Start Now” button, the system shall turn to the simulation page.
+8. There should be nine different simulations for users to choose from.
+9. After one simulation is selected, a dialogue with a brief introduction of the simulation pop out.
+10. Once a simulation starts, users cannot stop the simulation until it stops itself. But users can interact with it by clicking some buttons on the simulation.
+11. When the simulation stops, users are able to score the simulation based on the content and design of it.
+12. After one simulation is finished, users are able to watch other simulations by clicking on the ‘Simulation’ button on the top menu bar.
+13. The algorithm devised by developers is able to score the simulation automatically and intelligently.
+14. After ratifying the simulation, users are able to see the result on visualization page, and also the score marked by the algorithm.
+15. Users can check out a heatmap of the distribution of gazing points on visualization page.
+16. Users can check the records by clicking the “Records” button in the hamburger button.
+17. Users are able to upload and download the records from the cloud end through the buttons on the top rightmost corner.
+18. Users can only upload and download the records after logging into the system.
 
 ## Specification
 
@@ -39,14 +51,16 @@ The system should provide an assessment mechanism on how users interpret and int
 
 ## Non-functional
 
-| Aspect         | Description                                                  |
-| -------------- | ------------------------------------------------------------ |
-| Performance    | The system should be user-friendly and highly efficient when users are watching the simulation, with the eye tracker correctly working behind |
-| Implementation | The system should be developed using open source eye tracking software in Python & java (for the main logic and interface of the system) |
-| Usability      | Data acquired from experiments should be usable on machine learning analysis and the system should work correctly for different users and simulations. |
-| Security       | The privacy of users must not be exposed to irrelevant people. |
-
-TBC...
+1. The system should be developed using open source eye-tracking software in Python and Java.
+2. The system should restrict the format of usernames, passwords and e-mails when users register.
+3. The system should be able to detect human eyes within 2 seconds as soon as the simulation starts.
+4. Each simulation should be played successfully for at most 60 seconds.
+5. Each simulation should be scored by the algorithm of the program.
+6. The system should be able to continue tracking human eyes during the whole simulation playing time.
+7. The system should detect human eyes accurately with a tolerance of less than 20%.
+8. Data acquired from the eye-tracking system should be compatible with the machine learning tool.
+9. The cloud end should have at least 1G space to store the records.
+10. Each record is able ti visualized on the visualization page.
 
 ## User stories
 
@@ -58,9 +72,13 @@ As a user Max, I want to rate the simulation related to Ningbo provided by the e
 4. The results show that Max looks at upper right corner for 30 times, looks at bottom for 5 times.
 5. He rates the system 9 out of 10, because he thinks the simulation designed quite well.
 
+## Activity Diagram
+
+![](/archives/12806021/activity-diagram.png)
+
 ## Use Case Diagram
 
-![](/archives/12806021/use-case-diagram.jpg)
+![](/archives/12806021/use-case-diagram.png)
 
 ## Sequence Diagram
 
